@@ -1,3 +1,30 @@
 .caja-padre{
     background-color: chartreuse;
 }
+
+.telecom-pagina {
+    margin: 0;
+    padding: 30px 15px;
+    color: #333;
+    background-color: #e8f2ff;
+    font-family: Arial, sans-serif;
+}
+
+.telecom-pagina .contenedor {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.telecom-pagina h1, .telecom-pagina h2 { color: #1769aa; }
+.telecom-pagina h1 { text-align: center; }
+.telecom-pagina img { display: block; width: 100%; border-radius: 6px; }
+.telecom-pagina p, .telecom-pagina li { font-size: 17px; line-height: 1.6; }
+
+.color_de_fondo {
+    background-color: #d41c1c;
+    padding: 20px;
+    border-radius: 8px;
+}
