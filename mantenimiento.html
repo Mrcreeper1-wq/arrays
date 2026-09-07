@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Mantenimientos</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
     <div class="caja-padre">
-       
+
         <div class="hijo1">
             <h2>Panel de Mantenimiento</h2>
             <p>Bienvenido, <span id="nombreUsuario">Usuario</span></p>
             <button onclick="cerrarSesion()">Cerrar Sesión</button>
         </div>
 
-       
+
         <div class="hijo2">
             <h3>Quieres un mantenimiento para tu PC?</h3>
             <p>Aquí puedes ver mas informacion</p>
             <button onclick="location.href='pc-limpieza.html'">Mantenimiento de PC</button>
         </div>
-    <div class="hijo3">
+        <div class="hijo3">
+            <h3>Telecomunicaciones</h3>
+            <p>Aqui puedes ver mas informacion sobre servicios de telecomunicaciones</p>
+            <button onclick="location.href='telecomunicaciones.html'">Ver Más</button>
+        </div>
+        <div class="hijo3">
             <h3>Telecomunicaciones</h3>
             <p>Aqui puedes ver mas informacion sobre servicios de telecomunicaciones</p>
             <button onclick="location.href='telecomunicaciones.html'">Ver Más</button>
@@ -30,23 +37,24 @@
     </div>
 
     <script>
-       
+
         const usuarioSesion = localStorage.getItem("usuarioSesion");
 
         if (!usuarioSesion) {
-         
+
             alert("Debes iniciar sesión primero.");
             location.href = "login.html";
         } else {
-          
+
             document.getElementById("nombreUsuario").textContent = usuarioSesion;
         }
 
-      
+
         function cerrarSesion() {
             localStorage.removeItem("usuarioSesion");
             location.href = "login.html";
         }
     </script>
 </body>
+
 </html>
