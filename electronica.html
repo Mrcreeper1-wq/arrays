@@ -1,59 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrusel Automatico</title>
-    <link rel="stylesheet" href="estilo3.css" />
-  </head>
-  <body>
-   
-  
-     <div class="caja-padre">
+<<<<<<< HEAD
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Tu Tienda de Electrónica</title>
+</head>
+<body>
 
-        <div class="hijo1">
-            <h2>Panel de Mantenimiento</h2>
-            <p>Bienvenido, <span id="nombreUsuario">Usuario</span></p>
-            <button onclick="cerrarSesion()">Cerrar Sesión</button>
+    <header>
+        <h1>ElectroTech</h1>
+        <p>La mejor tecnología al mejor precio</p>
+    </header>
+
+
+    <section class="carousel-container">
+        <div class="carousel-wrapper">
+            
+            <article class="carousel-slide">
+                <div class="carousel-caption">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu_xvfUBOXeo1BRfKAAirHo-xhYERERi6X_xNNGl5au2rPRFIzSDHgEGY&s=10" alt="">
+                    <h3>Laptops de Última Generación</h3>
+                    <p>Hasta 20% de descuento en marcas seleccionadas.</p>
+                </div>
+            </article>
+            
+            <article class="carousel-slide">
+                <div class="carousel-caption">
+                    <h3>Nuevos Smartphones</h3>
+                    <p>Descubre las cámaras más potentes del mercado.</p>
+                </div>
+            </article>
+            
+            <article class="carousel-slide">
+                <div class="carousel-caption">
+                    <h3>Zona Gaming</h3>
+                    <p>Todo lo que necesitas para subir de nivel.</p>
+                </div>
+            </article>
+
         </div>
+    </section>
+
+    <main class="products-section">
+        <h2>Productos Destacados</h2>
+        <div class="products-grid">
+            
+            <article class="product-card">
+                <h3>Auriculares Bluetooth Pro</h3>
+                <p class="price">$89.99</p>
+                <button type="button">Añadir al carrito</button>
+            </article>
+
+    
+            <article class="product-card">
+                <h3>Smartwatch Series X</h3>
+                <p class="price">$149.99</p>
+                <button type="button">Añadir al carrito</button>
+            </article>
+
+            <article class="product-card">
+                <h3>Teclado Mecánico RGB</h3>
+                <p class="price">$65.00</p>
+                <button type="button">Añadir al carrito</button>
+            </article>
 
 
-        <div class="hijo2">
-            <h3>Quieres un mantenimiento para tu PC?</h3>
-            <p>Aquí puedes ver mas informacion</p>
-            <button onclick="location.href='pc-limpieza.html'">Ver Más</button>
+            <article class="product-card">
+                <h3>Monitor Gaming 24" 144Hz</h3>
+                <p class="price">$199.99</p>
+                <button type="button">Añadir al carrito</button>
+            </article>
+
         </div>
-        <div class="hijo3">
-            <h3>Telecomunicaciones</h3>
-            <p>Aqui puedes ver mas informacion sobre servicios de telecomunicaciones</p>
-            <button onclick="location.href='telecomunicaciones.html'">Ver Más</button>
-        </div>
-        <div class="hijo4">
-            <h3>Programación</h3>
-            <p>Aqui puedes ver mas informacion sobre servicios de programación</p>
-            <button onclick="location.href='programacion.html'">Ver Más</button>
-        </div>
-    </div>
-
-    <script>
-
-        const usuarioSesion = localStorage.getItem("usuarioSesion");
-
-        if (!usuarioSesion) {
-
-            alert("Debes iniciar sesión primero.");
-            location.href = "login.html";
-        } else {
-
-            document.getElementById("nombreUsuario").textContent = usuarioSesion;
-        }
+    </main>
 
 
-        function cerrarSesion() {
-            localStorage.removeItem("usuarioSesion");
-            location.href = "login.html";
-        }
-    </script>
-  </body>
-</html>
+</body>
+=======
