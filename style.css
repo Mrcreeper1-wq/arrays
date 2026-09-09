@@ -6,6 +6,8 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
+  top: -200px;
 }
 
 .carrusel-items {
