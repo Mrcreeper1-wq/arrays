@@ -1,0 +1,113 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b; 
+    line-height: 1.5;
+}
+
+
+header {
+    background: linear-gradient(135deg, #0f172a, #1e293b); 
+    color: #ffffff;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 6px;
+}
+
+header p {
+    color: #38bdf8; 
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+nav {
+    background-color: #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 16px 22px;
+    display: block;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: #334155;
+}
+
+.carousel-container {
+    max-width: 1100px;
+    margin: 35px auto;
+    overflow: hidden;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-wrapper {
+    display: flex;
+    width: 300%; 
+    animation: cambiarBanner 12s infinite steps(1, end);
+}
+
+.carousel-slide {
+    width: 100%;
+    position: relative;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(15, 23, 42, 0.9)); /* Degradado oscuro */
+    color: #ffffff;
+    padding: 50px 30px 25px 30px;
+}
+
+.carousel-caption h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #38bdf8;
+}
+
+.carousel-caption p {
+    font-size: 1.05rem;
+    color: #e2e8f0;
+}
